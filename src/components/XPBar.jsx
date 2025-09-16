@@ -13,7 +13,7 @@ export default function XPBar({ currentXP, totalXP }) {
   return (
     <div
       className="xp-bar-container"
-      data-text={`${currentXP}/${totalXP} XP`} // always shows text over bar
+      data-text={`${currentXP}/${totalXP} XP`}
     >
       <div className="xp-bar-fill" style={{ width: `${progress}%` }}></div>
     </div>

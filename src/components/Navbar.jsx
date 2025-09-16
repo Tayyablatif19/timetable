@@ -26,7 +26,7 @@ export default function Navbar({ user, selectedDate, setSelectedDate }) {
   let firstButtonLabel = "";
   let firstButtonAction = null;
 
-  // Navbar button logic
+  
   if (path === "/dashboard") {
     firstButtonLabel = "🏆";
     firstButtonAction = () => navigate("/leaderboard", { state: { user } });
@@ -44,7 +44,7 @@ export default function Navbar({ user, selectedDate, setSelectedDate }) {
       ? () => navigate("/birthdays")
       : () => navigate("/leaderboard", { state: { user } });
 
-  // Only show badges button if not already on /badges
+  
   const showBadgesButton = path !== "/badges";
 
   const goToBadges = () => navigate("/badges");
@@ -81,7 +81,7 @@ export default function Navbar({ user, selectedDate, setSelectedDate }) {
                   setSelectedDate(date);
                   setCalendarOpen(false);
                 }}
-                minDate={new Date(2025, 8, 8)} // Sept 8, 2025
+                minDate={new Date(2025, 8, 8)} 
                 maxDate={new Date()}
                 inline
               />

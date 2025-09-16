@@ -8,7 +8,7 @@
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 16px;
-  position: relative; /* ✅ Needed for badge positioning */
+  position: relative; 
 }
 
 @media (min-width: 768px) {
@@ -93,7 +93,7 @@
   gap: 8px;
 }
 
-/* ✅ New P/A Badge in Top-Right */
+
 .status-badge {
   position: absolute;
   top: 8px;

@@ -1,4 +1,4 @@
-// Badges.jsx
+
 import React, { useEffect, useState } from "react";
 import { supabase } from "../utils/supabaseClient";
 import BadgeCard from "../components/BadgeCard";
@@ -12,7 +12,6 @@ import xp50 from "../assets/badges/xp_50.png";
 import xp250 from "../assets/badges/xp_250.png";
 import xp500 from "../assets/badges/xp_500.png";
 import xp750 from "../assets/badges/xp_750.png";
-
 import classesDay from "../assets/badges/classes_day.png";
 import firstLogin from "../assets/badges/first_login.png";
 import login3Days from "../assets/badges/login_3_days.png";
@@ -46,7 +45,7 @@ export default function Badges() {
       if (!currentUser) throw new Error("No user logged in");
       setUser(currentUser);
 
-      // Get user's XP
+      // getting the students xp 
       const { data: userProfile } = await supabase
         .from("users")
         .select("xp")
@@ -57,19 +56,19 @@ export default function Badges() {
       // Award eligible XP badges
       await checkAndAwardXPBadges(currentUser.id, currentXP);
 
-      // Fetch badge definitions
+      // Fetch badge eligibilty criteria ig
       const { data: defs } = await supabase
         .from("badge_definitions")
         .select("*")
         .order("display_order");
 
-      // Fetch user's earned badges
+      // Fetch unlocked badges
       const { data: unlockedRows } = await supabase
         .from("user_badges")
         .select("badge_id, earned_at")
         .eq("user_id", currentUser.id);
 
-      // Merge badges with earned info
+      // Merge definitions with unlocked status
       const merged = defs.map((badge) => {
         const match = unlockedRows.find((u) => u.badge_id === badge.id);
         return {

@@ -1,4 +1,4 @@
-/* Container */
+
 .leaderboard-container {
   max-width: 900px;
   margin: 40px auto;
@@ -43,7 +43,7 @@
   font-weight: 600;
 }
 
-/* Top ranks */
+
 .leaderboard-table tr.gold {
   background-color: #fff7e6;
 }
@@ -64,7 +64,7 @@
   background-color: #e5e7eb;
 }
 
-/* No data / loading */
+
 .leaderboard-no-data,
 .leaderboard-loading {
   text-align: center;
@@ -73,7 +73,7 @@
   color: #4b5563;
 }
 
-/* Navbar adjustments (optional if Navbar is used) */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -105,7 +105,7 @@
   background-color: #1d4ed8;
 }
 
-/* Date display */
+
 .navbar-date {
   font-size: 0.95rem;
   margin-right: 12px;

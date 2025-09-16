@@ -11,14 +11,14 @@
   align-items: center;
 }
 
-/* Left section (buttons + title) */
+/* Left section ka (buttons + title) */
 .navbar-left {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Navbar title */
+/* Nav title */
 .navbar-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -63,7 +63,7 @@
   transform: scale(1.05);
 }
 
-/* Shared style for nav buttons (Leaderboard, Birthdays, Badges, Calendar) */
+/* all buttons style  */
 .nav-btn, .calendar-btn {
   background-color: #2563eb;
   color: white;
@@ -81,16 +81,16 @@
   transform: scale(1.05);
 }
 
-/* Active state (highlights current page button) */
+/* button of page u r on */
 .nav-btn.active {
   background-color: #1d4ed8;
   transform: scale(1.05);
 }
 
-/* Calendar popup */
+/* Calendar hai ye */
 .react-datepicker {
   position: absolute;
-  top: 50px; /* below navbar buttons */
+  top: 50px; 
   left: 0;
   z-index: 100;
   border-radius: 12px;
@@ -114,7 +114,7 @@
   font-weight: 500;
 }
 
-/* Individual days */
+
 .react-datepicker__day {
   border-radius: 6px;
   line-height: 2rem;
@@ -126,29 +126,28 @@
   color: #1e40af;
 }
 
-/* Selected day */
+
 .react-datepicker__day--selected {
   background-color: #2563eb;
   color: white;
 }
 
-/* Today highlight */
+
 .react-datepicker__day--today {
   font-weight: bold;
   color: #1d4ed8;
 }
 
-/* Disable future days */
+
 .react-datepicker__day--disabled {
   color: #9ca3af;
   cursor: not-allowed;
 }
 
-/* Responsive adjustments for small screens */
 @media (max-width: 640px) {
   .navbar-date,
   .navbar-user {
-    display: none; /* Hide only date & username */
+    display: none; 
   }
-  /* Buttons stay visible */
+  
 }

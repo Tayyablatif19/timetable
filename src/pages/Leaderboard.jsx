@@ -9,7 +9,7 @@ export default function Leaderboard({ selectedDate, setSelectedDate }) {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
 
-  // Fetch current user from Supabase auth
+  // Fetch current user from Supabase 
   useEffect(() => {
     async function fetchUser() {
       const { data: { user: currentUser } = {}, error } = await supabase.auth.getUser();

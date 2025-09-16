@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import XPBar from "../components/XPBar";
 import ClassCard from "../components/ClassCard";
 import Skeleton from "../components/Skeleton";
-import { checkAndAwardXPBadges } from "../utils/badges"; // <- import badge checker
+import { checkAndAwardXPBadges } from "../utils/badges"; 
 import "./Dashboard.css";
 
 export default function Dashboard() {
@@ -122,7 +122,7 @@ export default function Dashboard() {
       return [...filtered,{ reg_id: user.reg_id, class_id: classId, date: dateStr, status }];
     });
 
-    // ✅ Award badges immediately after XP update
+    // Award badges immediately after XP update
     const newMonthlyXP = calculateMonthlyXP();
     await checkAndAwardXPBadges(user.id, newMonthlyXP);
   };

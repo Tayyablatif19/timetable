@@ -1,10 +1,10 @@
-/* Dashboard container */
+
 .dashboard-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   font-family: "Inter", sans-serif;
-  color: #1f2937; /* dark gray for text */
+  color: #1f2937; 
 }
 
 /* Titles */
@@ -17,12 +17,12 @@
 .dashboard-subtitle {
   font-size: 1.1rem;
   margin-bottom: 16px;
-  color: #4b5563; /* medium gray */
+  color: #4b5563; 
 }
 
 /* XP Bar */
 .xp-bar-container {
-  background-color: #e5e7eb; /* light gray background */
+  background-color: #e5e7eb; 
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -30,7 +30,7 @@
 }
 
 .xp-bar-fill {
-  background-color: #056b00; /* blue filler */
+  background-color: #056b00; 
   color: white;
   height: 100%;
   display: flex;
@@ -40,12 +40,12 @@
   transition: width 0.3s ease-in-out;
 }
 
-/* Class Card spacing */
+
 .class-card {
   margin-bottom: 12px;
 }
 
-/* Loading */
+
 .dashboard-loading {
   text-align: center;
   font-size: 1.2rem;
@@ -53,7 +53,7 @@
   color: #4b5563;
 }
 
-/* Calendar container */
+
 .calendar-container {
   margin-bottom: 20px;
   display: flex;
@@ -61,7 +61,7 @@
   align-items: flex-start;
 }
 
-/* Calendar icon */
+
 .calendar-icon {
   font-size: 1.5rem;
   margin-bottom: 8px;
@@ -69,14 +69,14 @@
 
 /* DatePicker overrides for aesthetics */
 .react-datepicker {
-  border: 1px solid #d1d5db; /* gray border */
+  border: 1px solid #d1d5db; 
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .react-datepicker__header {
-  background-color: #f9fafb; /* very light gray */
+  background-color: #f9fafb; 
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -87,7 +87,7 @@
 
 .react-datepicker__day--selected,
 .react-datepicker__day--keyboard-selected {
-  background-color: #2563eb !important; /* blue highlight */
+  background-color: #2563eb !important; 
   color: white;
   border-radius: 50%;
 }
@@ -98,7 +98,7 @@
 }
 
 .react-datepicker__day:hover:not(.react-datepicker__day--disabled) {
-  background-color: #dbeafe; /* light blue hover */
+  background-color: #dbeafe;
   border-radius: 50%;
 }
 

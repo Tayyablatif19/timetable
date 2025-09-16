@@ -1,7 +1,7 @@
 .xp-bar-container {
   width: 100%;
   height: 28px;
-  background-color: #e5e7eb; /* light grey */
+  background-color: #e5e7eb; 
   border-radius: 14px;
   overflow: hidden;
   margin: 12px 0;
@@ -20,10 +20,10 @@
   color: #1f2937;
   border-radius: 14px 0 0 14px;
   transition: width 0.5s ease-in-out;
-  white-space: nowrap; /* prevent breaking */
+  white-space: nowrap;
 }
 
-/* Trick to make text always visible even for very small bars */
+
 .xp-bar-container::after {
   content: attr(data-text);
   position: absolute;
@@ -37,5 +37,5 @@
   font-weight: 600;
   font-size: 0.9rem;
   color: #1f2937;
-  pointer-events: none; /* click passes through */
+  pointer-events: none; 
 }
