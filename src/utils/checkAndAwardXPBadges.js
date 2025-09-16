@@ -99,4 +99,3 @@ export async function checkAndAwardXPBadges(userId, currentXP = 0) {
 
   return newlyAwarded;
 }
-

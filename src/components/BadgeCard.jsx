@@ -25,4 +25,3 @@ export default function BadgeCard({ icon, name, description, earnedAt }) {
     </div>
   );
 }
-

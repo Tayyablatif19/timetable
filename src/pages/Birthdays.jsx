@@ -109,5 +109,3 @@ export default function Birthdays({ selectedDate, setSelectedDate }) {
     </div>
   );
 }
-
-
