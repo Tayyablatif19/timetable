@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Leaderboard from "./pages/Leaderboard";
 import Birthdays from "./pages/Birthdays"; 
 import Badges from "./pages/Badges";
+import { Analytics } from "@vercel/analytics/next"
 
 
 export default function App() {
