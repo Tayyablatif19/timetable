@@ -1,7 +1,7 @@
 export const timetable = {
   Monday: [
     { id: "mon-1", time: "09:00–10:15", subject: "Academic & Technical Writing", code: "Hu-113", instructor: "Dr. Ayesha Khurshid", room: "CR-10" },
-    { id: "mon-2", time: "10:20–11:35", subject: "Fundamentals od Financial Accounting", code: "ACC-111", instructor: "Ms. Riffat Jabeen", room: "CR-10" },
+    { id: "mon-2", time: "10:20–11:35", subject: "Fundamentals of Financial Accounting", code: "ACC-111", instructor: "Ms. Riffat Jabeen", room: "CR-10" },
   ],
   Tuesday: [
     { id: "tue-1", time: "14:00–17:00", subject: "Understanding Of Quran-I", code: "HU-131", instructor: "Mr. M. Ahsan", room: "CR-10" },

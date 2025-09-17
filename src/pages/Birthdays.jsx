@@ -66,6 +66,7 @@ export default function Birthdays({ selectedDate, setSelectedDate }) {
       setLoading(false);
     }
 
+    
     fetchBirthdays();
   }, []);
 
